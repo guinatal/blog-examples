@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp"> <!-- Directive -->
+  <head>
+    <title>First AngularJS App</title>
+  </head>
+  <body>
+    <h1>First AngularJS App</h1>
+
+    <!-- Expressions -->
+    <article>
+      <h1>Expressions</h1>
+      <p>8 + 5 = {{ 8 + 5 }}</p>
+      <p>100 / 2 = {{ 100 / 2 }}</p>
+      <p>100 * 2 + 1 = {{ 100 * 2 + 1 }}</p>
+      <p>Currency = {{ 100 | currency }}</p>
+    </article>
+
+    <!-- Controller -->
+    <article ng-controller="myController as controller">
+      <h1>Controller</h1>
+      <p>{{ controller.user.name }}</p>
+      <p>{{ controller.user.password }}</p>
+      <p>{{ controller.user.age }}</p>
+    </article>
+
+    <!-- AngularJS Library -->
+    <script src="angular.min.js"></script>
+    <!-- External Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

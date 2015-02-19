@@ -1,0 +1,27 @@
+body{
+  font-family: arial;
+  margin: 20px;
+}
+body p{
+  padding: 5px;
+}
+
+/* Descendant Selector */
+.descendant div p{
+  background-color: skyblue;
+}
+
+/* Child Selector */
+.child div > p{
+  background-color: skyblue;
+}
+
+/* Adjacent Sibling Selector */
+.adjacent div + p{
+  background-color: skyblue;
+}
+
+/* General Sibling Selector */
+.general div ~ p{
+  background-color: skyblue;
+}
