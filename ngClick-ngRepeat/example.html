@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS ngClick and ngRepeat</title>
+  </head>
+  <body ng-controller="myController">
+    <h1>AngularJS ngClick and ngRepeat</h1>
+
+    <!-- ngClick -->
+    <h3>ngClick</h3>
+    <button ng-click="click();">Click</button>
+    <label>{{ message }}</label>
+
+    <!-- ngRepeat -->
+    <h3 ng-show="show">ngRepeat 1</h3>
+    <ul>
+      <li ng-repeat="user in users">{{ user.name }}</li>
+    </ul>
+
+    <h3 ng-show="show">ngRepeat 2</h3>
+    <ul>
+      <li ng-repeat-start="user in users">{{ user.name }}</li>
+      <li>{{ user.age }}</li>
+      <li ng-repeat-end><button ng-click="showEmail(user.email);">Email</button></li>
+    </ul>
+
+    <!-- AngularJS Library -->
+    <script src="angular.min.js"></script>
+    <!-- External Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
