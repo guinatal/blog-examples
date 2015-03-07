@@ -25,3 +25,21 @@
   ];
 
 })();
+
+
+/*var Appp = function(){
+  this.lol = "Guilherme";
+};
+
+Appp.prototype.minhaFuncao = function(){
+
+  var teste =
+
+}
+
+var teste = new Appp();
+teste.minhaFuncao();
+
+
+var teste2 = new Appp();
+teste2.minhaFuncao();*/
