@@ -7,8 +7,37 @@
   <body>
     <h1>Working with images on a Retina Display</h1>
 
-    <div class="image"></div>
+    <h3>non-retina display ... test 1</h3>
+    <div class="image-1"></div>
 
-    <div class="image-retina"></div>
+    <h3>retina display ... test 2</h3>
+    <div class="image-2"></div>
+
+    <h3>retina display ... test 3</h3>
+    <img src="image.png">
+
+    <h3>retina display ... test 4</h3>
+    <img src="image.png" srcset="image.png 1x, image@2x.png 2x">
+
+    <script>
+      (function(){
+
+        if (window.devicePixelRatio > 1) {
+
+          var images = document.getElementsByTagName("img");
+
+          for(var i=0; i<images.length; i++) {
+
+            images[i].width  = images[i].clientWidth;
+            images[i].height  = images[i].clientHeight;
+            images[i].src = images[i].src.replace(".", "@2x.");
+
+          };
+
+        };
+
+      })();
+    </script>
+
   </body>
 </html>
