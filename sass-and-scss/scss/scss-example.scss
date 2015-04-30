@@ -1,0 +1,49 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$font-small: 15px;
+$font-medium: 30px;
+$font-large: 60px;
+$blue: #186DEE;
+$grey: #E5E5E5;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+h1 {
+  color: $blue
+}
+
+.content {
+  padding: 20px;
+  background-color: $grey;
+  @include border-radius(5px);
+
+  &:hover {
+    background-color: $blue
+  }
+
+  span {
+    display: block
+  }
+
+  span.one {
+    font-size: $font-small
+  }
+
+  span.two {
+    font-size: $font-medium
+  }
+
+  span.three {
+    font-size: $font-large
+  }
+}

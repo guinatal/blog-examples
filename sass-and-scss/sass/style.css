@@ -1,0 +1,26 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+h1 {
+  color: #186DEE; }
+
+.content {
+  padding: 20px;
+  background-color: #E5E5E5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .content:hover {
+    background-color: #186DEE; }
+  .content span {
+    display: block; }
+  .content span.one {
+    font-size: 15px; }
+  .content span.two {
+    font-size: 30px; }
+  .content span.three {
+    font-size: 60px; }
+
+/*# sourceMappingURL=style.css.map */
