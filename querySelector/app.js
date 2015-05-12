@@ -6,7 +6,7 @@ var querySelector_Click = function(){
       phone1 = phones[0], // phone 1
       phone2 = phones[1], // phone 2
       phone3 = phones[2], // phone 3
-      article = document.querySelector("#content > .articles > .article");
+      article = document.querySelector("#content > .articles > .article"); // article
 
   console.log("--- querySelector_Click ---");
   console.log(name);
@@ -27,7 +27,7 @@ var getElementById_Click = function(){
       phone1 = phones[0], // phone 1
       phone2 = phones[1], // phone 2
       phone3 = phones[2], // phone 3
-      article = document.getElementById("content");
+      article = document.getElementById("content"); // article
 
   console.log("--- getElementById_Click ---");
   console.log(name);
