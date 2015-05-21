@@ -2,66 +2,56 @@
 <html>
   <head>
     <title>Javascript: querySelector vs getElementById</title>
-    <style type="text/javascript">
+    <style>
       body{
         font-family: arial;
-      }
-      fieldset {
-        border:5px solid #EEEEEE;
-        padding: 20px;
-      }
-
-      legend {
-        padding: 5px 40px;
-        border: 5px solid #EEEEEE;
-        color: #666666;
       }
       input{
         padding: 5px;
       }
-      input[type=button]{
-        border: 0;
-        padding: 10px;
-        background-color: black;
-        color: white;
+      span{
+        color: red;
       }
     </style>
   </head>
   <body>
-    <h1>Javascript: querySelector vs getElementById</h1>
+    <h1>:) Look the console</h1>
 
-    <form>
-      <fieldset>
-        <legend>Form:</legend>
-
-        <label>Name: </label>
-        <input id="name" type="text" value="Guilherme" /><br /><br />
-
-        <label>Age: </label>
-        <input id="age" type="text" value="22" /><br /><br />
-
-        <label>Phone 1: </label>
-        <input class="phone" type="text" value="111111" /><br /><br />
-
-        <label>Phone 2: </label>
-        <input class="phone" type="text" value="222222" /><br /><br />
-
-        <label>Phone 3: </label>
-        <input class="phone" type="text" value="333333" />
-
-      </fieldset>
+    <h2><span>querySelector</span> vs <span>getElementById</span></h2>
+    <form id="userForm">
+      <input id="username" type="text" value="Guilherme" />
     </form>
 
-    <div id="content">
-      <div class="articles">
-        <label class="article">My first article</label>
-      </div>
-    </div>
+    <h2><span>querySelectorAll</span> vs <span>getElementsByClassName</span></h2>
+    <form id="productForm">
+      <input id="productOne" class="product" type="text" value="Product 1" />
+      <input id="productTwo" class="product" type="text" value="Product 2" />
+      <input id="productThree" class="product" type="text" value="Product 3" />
+    </form>
 
-    <br /><br />
-
-    <input type="button" value="querySelector" onclick="querySelector_Click()" />
-    <input type="button" value="getElementById" onclick="getElementById_Click()" />
+    <h2><span>querySelectorAll</span> good example</h2>
+    <table id="tableProducts">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+        </tr>
+       </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+    </table>
 
     <!-- External Javascript -->
     <script src="app.js"></script>

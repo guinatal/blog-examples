@@ -1,40 +1,21 @@
-var querySelector_Click = function(){
+var username = document.getElementById("username");
+console.log(username);
 
-  var name = document.querySelector("#name"), // name
-      age = document.querySelector("#age"), // age
-      phones = document.querySelectorAll(".phone"), // all phones
-      phone1 = phones[0], // phone 1
-      phone2 = phones[1], // phone 2
-      phone3 = phones[2], // phone 3
-      article = document.querySelector("#content > .articles > .article"); // article
+var username = document.querySelector("#userForm #username");
+console.log(username);
 
-  console.log("--- querySelector_Click ---");
-  console.log(name);
-  console.log(age);
-  console.log(phones);
-  console.log(phone1);
-  console.log(phone2);
-  console.log(phone3);
-  console.log(article);
+var products = document.getElementsByClassName("product");
+console.log(products);
 
-};
+var products = document.querySelectorAll("#productForm .product");
+console.log(products);
 
-var getElementById_Click = function(){
+var sum = 0;
 
-  var name = document.getElementById("name"), // name
-      age = document.getElementById("age"), // age
-      phones = document.getElementsByClassName("phone"), // all phones
-      phone1 = phones[0], // phone 1
-      phone2 = phones[1], // phone 2
-      phone3 = phones[2], // phone 3
-      article = document.getElementById("content"); // article
+var cells = document.querySelectorAll("#tableProducts>tbody>tr>td:nth-of-type(2)");
+console.log(cells);
 
-  console.log("--- getElementById_Click ---");
-  console.log(name);
-  console.log(age);
-  console.log(phones);
-  console.log(phone1);
-  console.log(phone2);
-  console.log(phone3);
+for (var i = 0; i < cells.length; i++)
+  sum += parseFloat(cells[i].firstChild.data);
 
-};
+console.log(sum);
