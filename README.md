@@ -1,3 +1,3 @@
 # Examples of my blog
 
-[Blog](http://blog.guinatal.com)
+[blog.guinatal.com](http://blog.guinatal.com)
