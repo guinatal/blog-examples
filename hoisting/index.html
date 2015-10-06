@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hoisting</title>
+</head>
+<body>
+	
+	<h1>See the browser console.</h1>
+
+	<script>
+		'use strict';
+
+		// Variable
+		x = 'Declaring a variable after using it.'; // It works!
+		console.log(x);
+		var x;
+
+		// Function
+		myFunction(10); // It works!
+		function myFunction(x) {
+			console.log(x);
+		}
+
+		// Class
+		try{
+			let a = new myClass(1, 2); // ReferenceError
+		}catch(e){
+			console.log(e);
+		}
+		
+		class myClass {
+			constructor(x, y){
+				this.x = x;
+				this.y = y;
+			}
+		}
+	</script>
+
+</body>
+</html>
