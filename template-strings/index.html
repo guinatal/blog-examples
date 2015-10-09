@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template strings</title>
+</head>
+<body>
+
+	<h1>See the browser console.</h1>
+
+	<script>
+		'use strict';
+
+		////////////////////////////////////////////////////////////////////
+		// Example 1
+		////////////////////////////////////////////////////////////////////
+
+		let age = 23;
+
+		console.log('I am ' + age + ' years old.'); // normal strings
+
+		console.log(`I am ${age} years old.`); // template strings
+
+		////////////////////////////////////////////////////////////////////
+		// Example 2
+		////////////////////////////////////////////////////////////////////
+
+		// normal strings
+
+		console.log("my text line 1\n"+
+			"my text line 2\n"+
+			"my text line 3\n"+
+			"my text line 4\n");
+
+		// template strings
+
+		console.log(`my text line 1
+my text line 2
+my text line 3
+my text line 4`);
+
+		////////////////////////////////////////////////////////////////////
+		// Example 3
+		////////////////////////////////////////////////////////////////////
+
+		let a = 13;
+		let b = 10;
+
+		// normal strings
+
+		console.log("I am " + (a + b) + " years old and not " + (2 * a + b) + ".");
+
+		// template strings
+
+		console.log(`I am ${a + b} years old and not ${2 * a + b}.`);
+
+	</script>
+</body>
+</html>
